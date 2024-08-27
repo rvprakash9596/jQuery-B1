@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>text() method</title>
+
+</head>
+<body>
+    <h1 id="x"> Techpile Technology PVT. LTD. </h1>
+    <h1 id="y">Welcome to the world of jQuery</h1>
+    <button>Click Me</button>
+
+
+<script src="js/jquery-3.7.1.js"></script>
+<script>
+    $(document).ready(function(){
+    $("button").click(function(){
+    let t1 = $("#x").text() //getting text
+    let t2 = $("#y").text() //getting text
+    //swapping start
+    $("#x").text(t2);
+    $("#y").text(t1);
+    });
+    });
+</script>
+</body>
+</html>

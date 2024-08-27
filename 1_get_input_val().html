@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Get Input Value</title>
+
+</head>
+<body>
+    <input type="text"  id="txt1">
+    <button>CLICK ME</button>
+
+
+<script src="js/jquery-3.7.1.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+           let x = $("input").val(); //getting value
+           alert("You have entered : "+x); // printing value of x
+        });
+    });
+</script>
+</body>
+</html>

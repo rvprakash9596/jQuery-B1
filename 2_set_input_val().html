@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Set Input Value</title>
+
+</head>
+<body>
+    <input type="text"  id="txt1"><br><br>
+    <input type="text"  id="txt2"><br><br>
+    <button>CLICK ME</button>
+
+
+<script src="js/jquery-3.7.1.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+           let x = $("#txt1").val(); //getting value
+           let y = $("#txt2").val(x);//setting value of x into txt2 field
+        });
+    });
+</script>
+</body>
+</html>

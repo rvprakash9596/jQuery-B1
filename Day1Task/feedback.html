@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Feedback Form</title>
+    <script src="../js/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                let x = $("#txt1").val(); //getting value
+                $("#yName").text(x); // assigning value
+                let y = $("#txt2").val();
+                $("#yFrom").text(y);
+                let z= $("txt3").val();
+                $("#yFeed").text(z);
+            });
+        });
+    </script>
+</head>
+<style>
+h1{
+    color: black;
+    margin: 0px auto;
+    margin-left: 600px;
+    margin-top: 20px;
+}
+p{
+    margin-left: 450px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.box{
+    min-height: 600px;
+    width: 1100px;
+    margin:0px auto;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+.left{
+    min-height: 500px;
+    width: 500px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    /* background-color: rebeccapurple; */
+    background: url("../images/handpen.jpg");
+    background-size: 100% 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.right{
+    min-height: 500px;
+    width: 500px;
+    float: left;
+    margin-top: 50px;
+    border-radius: 5px;
+    margin-left: 0px;
+    /* background-color: red; */
+    box-sizing: border-box;
+}
+.t1 font{
+    font-size: 25px;
+    margin-left: 20px;
+    border-bottom: 3px solid red;
+}
+
+.t2l{
+    height: 80px;
+    width: 250px;
+    margin-top: 20px;
+    /* background-color: teal; */
+    float: left;
+    box-sizing: border-box;
+}
+span{
+    margin-left: 20px;
+}
+input{
+    /* border: 2px solid red; */
+    height: 30px;
+    width: 200px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    line-height: 30px;
+    margin-left: 20px;
+    border-radius: 2px;
+}
+.t3{
+    margin-top: 150px;
+}
+button{
+    cursor: pointer;
+    border-radius: 10px;
+    height: 50px;
+    width: 150px;
+    color: orangered;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+</style>
+<body>
+<div class="container-fluid">
+<h1>Your Valuable <font style="color: orangered;">Feedback</font></h1>
+<p>We appreceiate your valuable feedback . Give us your feedback by filling the form bellow:</p>
+<div class="box">
+<div class="left"></div>
+<div class="right">
+<!-- <form> -->
+    <div class="t1" style="margin-top: 5px;"> <font>Add</font> Your Feedback</div>
+    <div class="t2" style="margin-top: 30px;">
+        <div class="t2l">
+            <span>Your Name:</span>
+            <input type="text" placeholder="Enter Your Name" id="txt1"> 
+            <span id="yName"></span>
+        </div>
+        <div class="t2l">
+            <span>Your Image:</span>
+            <input type="file" placeholder="Enter Your Name" id="img1">
+        </div>
+    </div>
+    <div class="t3">
+        <span>You're From :</span> <br>
+        <input type="text" placeholder="Enter Your College/Institute Name*" required style="width: 90%;" id="txt2">
+        <span id="yFrom"></span>
+    </div>
+    <div class="t4" style="margin-top: 60px;">
+        <span>Your Feedback:</span> <br>
+        <textarea name="" rows="5" cols="58" style="margin-left: 20px;" placeholder="Your Valuable Address" id="txt3"></textarea>
+        <span id="yFeed"></span>
+    </div>
+    <div class="btn">
+         <button>SEND FEEDBACK</button>
+    </div>
+<!-- </form> -->
+</div>
+</div>
+</div>
+</body>
+</html>

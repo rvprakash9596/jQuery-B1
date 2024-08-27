@@ -1,0 +1,193 @@
+                                        jQuery 24-Aug-2024
+                                   ----------------------------
+
+"Write Less , Do More".
+
+jQuery is a JavaScript Open Source Library.
+JavaScript is developed completely based on JavaScript.
+jQuery is not replacement of JavaScript . It simplifies the JavaScript Tasks.
+It's punch line is "write less , do more".
+
+Creation of jQuery :
+--------------------
+Created in 2006.
+John Resig
+
+Features of jQuery :
+--------------------
+Simple
+DOM Traversing
+DOM Manipulation
+Event Handling
+Styles Modification
+Effects and Animation
+jQuery - UI
+CSS3 Compliant
+Light Weight Library
+Cross Browser Support
+Interpreted
+
+
+S/W Requirements for jQuery :
+-----------------------------
+Web Browser - Any
+Text Editor - Any
+jQuery File
+
+
+
+Basic Structure of jQuery :
+---------------------------
+
+jQuery(document).ready(function(){
+
+});
+
+               OR
+
+$(document).ready(function(){
+
+});
+
+
+jQuery Selector :
+-----------------
+
+Syntax :
+-------- 
+$("selectorName").action();
+
+Example :
+---------
+$("#idName")
+$(".className")
+$("tagName")
+$("*")
+
+
+jQuery functions :
+------------------
+val()
+text()
+html()
+attr()
+css()
+show()
+hide()
+toggle()
+fadeIn()
+fadeOut()
+fadeToggle()
+fadeTo()
+slideUp()
+slideDown()
+slideToggle()
+eq
+lt
+gt
+remove()
+before()
+after()
+append()
+prepend()
+addClass()
+removeClass()
+toggleClass()
+
+======================================================================================================
+
+
+val() function :
+----------------
+val() is used to get/set value of selected form control.
+
+Syntax :
+--------
+let x = $("selector").val()
+
+Example :
+---------
+<input type="text"/>10
+
+let x = $("input").val() // getting value
+alert(x);
+
+set :
+-----
+
+<input type="text" id="t1"/>
+$("input").val("Ravi Prakash");
+
+
+exa :
+-----
+<input type="text" id="t1"/>
+$("input").val("Techpile Technology")
+
+innerText
+
+
+
+
+text() :
+--------
+text() is used to get/set value of selected tag only . It can't be used in form-control.
+
+<h1> Techpile Technology PVT. LTD. </h1>
+
+get :
+-----
+$("selector").text()
+let x = $("h1").text(); // Techpile Technology PVT. LTD.
+
+set :
+-----
+$("selector").text(text)
+$("div").text("Techpile Technology")
+
+======================================================================================================
+                                        Day 2
+======================================================================================================
+
+object.style.propertyName="value"
+box.style.backgroundColor="red"
+
+object.style.fontSize="24px"
+
+css() function in jQuery :
+--------------------------
+==> css() function is used to set single or multiple css at a time.
+
+Single css value:
+-----------------
+$("selector").css({"propertyName","value"});
+$("div").css({"background","red"});
+$("div").css({"color","pink"});
+
+Double css value:
+-----------------
+$("selector").css({"propertyName":"value" , "propertyName":"value" , "propertyName":"value"});
+
+$("div").css({"height":"200px" , "width":"200px" , "backgroundColor":"red" , "color":"teal"});
+
+
+
+attr() :
+--------
+attr() method is used to set/get attribute value of selected HTML Tag/Elements.
+<img src="" title="" />
+
+get :
+-----
+$("selector").attr("attributeName")
+
+
+
+
+
+
+
+
+
+
+

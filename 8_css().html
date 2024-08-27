@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>css() method in jQuery</title>
+<script src="js/jquery-3.7.1.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("div").css({"height":"200px" , "width":"800px" ,"backgroundColor":"black" ,
+                        "textAlign":"center" , "color":"yellow" , "padding":"20px" , "boxSizing":"borderBox" , "borderRadius":"5px" , "border":"10px double red" ,
+                       "fontSize":"50px" , "lineHeight":"200px"
+                });
+    });
+});
+</script>
+<style>
+    button{
+        height: 50px;
+        width: 200px;
+        background-color: black;
+        color: white;
+        font-size: 30px;
+        border-radius: 5px;
+        border: 5px double yellow;
+    }
+
+</style>
+</head>
+<body>
+    <div>मंजिल से ज्यादा खूबसूरत रास्ते होते हैं |</div><br>
+    <button>Set Style</button>
+</body>
+</html>

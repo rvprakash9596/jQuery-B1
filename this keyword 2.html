@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>this keyword in jQuery</title>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("li").dblclick(function(){
+            let x = $(this).text();
+            $("h1").html(x);
+            });
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>Summer Training</li>
+        <li>IT Training</li>
+        <li>Apprenticeship Program</li>
+        <li>Corporate Training</li>
+    </ul>
+    <h1> </h1>
+</body>
+</html>

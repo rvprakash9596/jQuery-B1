@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Swap Input Value</title>
+<style>
+    button{
+        background-color: bisque;
+        height: 30px;
+        width: 100px;
+        border-radius: 5px;
+        border: 2px solid blue;
+    }
+</style>
+</head>
+<body>
+    <input type="text"  id="txt1"><br><br>
+    <input type="text"  id="txt2"><br><br>
+    <button>Swap Now</button>
+
+
+<script src="js/jquery-3.7.1.js"></script>
+<script>
+    $(document).ready(function(){
+    $("button").click(function(){
+    let t1 = $("#txt1").val(); //getting value txt1
+    let t2 = $("#txt2").val();//getting value txt2
+    // Now Swapping Start
+    $("#txt1").val(t2);
+    $("#txt2").val(t1);
+    });
+    });
+</script>
+</body>
+</html>

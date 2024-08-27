@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>innerHTML & innerText</title>
+    <style>
+        p{
+            border: 10px solid red;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1">
+    <b>Welcome to JavaScript</b><br>
+    <img src="images/handpen.jpg" height="200px" width="200px">
+    </p>
+    <h1 style="background-color: teal; display: inline;"></h1><br><br>
+    <button>Click Me</button>
+    <!-- jQuery Start -->
+    <script src="js/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+               let x = $("#p1").html();
+               $("h1").html(x); 
+
+            //    let b = $("#p1").text();
+            //    $("h1").text(b);
+            //    alert(b); 
+            });
+        });
+    </script>
+</body>
+</html>
